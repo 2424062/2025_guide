@@ -1,115 +1,110 @@
 <!DOCTYPE html>
-<html lnag="ja">
-
-
+<html lang="jp">
 <head>
-    <meta charaset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description" content="これはテキストサイトです">
-   
-     <title>TEST SITE</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
 
-       <link rel="stylesheet" href="./css/style.css"/>
-         <script src="./js/main.js"></script>
+    <script>
+    // ユーザーエージェントでスマホ判定
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    // または画面幅で判定
+    // const isMobile = window.innerWidth <= 768;
+
+    if (isMobile) {
+      // スマホ用ファイル（例：mobile.html）へリダイレクト
+      window.location.href = "s index.html";
+    } else {
+      // PC用ファイル（例：desktop.html）へリダイレクト
+      window.location.href = "index.html";
+    }
+  </script>
 
 </head>
 
-
-
 <body>
-  <header>
-  <nav>
-    <h1>TEST SITE</h1>
-    <ul>
 
-        <li><a href="#">About</a></li>
-        <li><a href="#">Product</a></li>
-        <li><a href="#">Contact</a></li>
-
-    </ul>
-
-  </nav>
-
- </header>
-
- <main>
-    <section>
-        <div class="section-title">
-            <h2>TITLE</h2>
-        </div>
-        <div class="new-item">
-            <div class="new-img">
-                <img src="./img/item.jpg">
+    <div class="container">
+        <div class="main-contents">
+            <div class="title">
+                <h1>
+                    <span>結んで、</span><br>
+                    <span>広がる、</span><br>
+                    <span>日本の美。</span>
+                </h1>
             </div>
-            <div class="new-detial">
-                <p class="neme">ITEM NAME</p>
-                <p class="price">5000円</p>
-                <p class="txt">これはダミーテキストです。これはダミーテキストです。
-                    これはダミーテキストです。これはダミーテキストです。これはダミーテキストです。
-                    これはダミーテキストです。これはダミーテキストです。これはダミーテキストです。
-                    これはダミーテキストです。これはダミーテキストです。
-                </p>
-            </div>
+            
 
+            <div class="slideshow">
+                <div class="slide-track">
+                  <img src="img/hana01.png" alt="Slide 1">
+                  <img src="img/kamidomenoyatu_resized.png" alt="Slide 2">
+                  <img src="img/turu04_757x631.png" alt="Slide 3">
 
-        </div>
-         
-    </section>
-
-    <section>
-        <div class="section-title"><h2>TITLE</h2></div>
-
-        <div class="item-list">
-            <div class="item-solo">
-                <img src="./img/item.jpg">
-                <div class="item-txt">
-                    <p class="name">ITEM NAME 1</p>
-                    <p class="price">5000円</p>
-                    <p class="txt">これはダミーテキストです。これはダミーテキストです。
-                        これはダミーテキストです。これはダミーテキストです。これはダミーテキストです。
-                        これはダミーテキストです。これはダミーテキストです。これはダミーテキストです。
-                        これはダミーテキストです。これはダミーテキストです。
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="item-solo">
-                <img src="./img/item.jpg">
-                <div class="item-txt">
-                    <p class="name">ITEM NAME 2</p>
-                    <p class="price">5000円</p>
-                    <p class="txt">これはダミーテキストです。これはダミーテキストです。
-                        これはダミーテキストです。これはダミーテキストです。これはダミーテキストです。
-                        これはダミーテキストです。これはダミーテキストです。これはダミーテキストです。
-                        これはダミーテキストです。これはダミーテキストです。
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="item-solo">
-                <img src="./img/item.jpg">
-                <div class="item-txt">
-                    <p class="name">ITEM NAME 3</p>
-                    <p class="price">5000円</p>
-                    <p class="txt">これはダミーテキストです。これはダミーテキストです。
-                        これはダミーテキストです。これはダミーテキストです。これはダミーテキストです。
-                        これはダミーテキストです。これはダミーテキストです。これはダミーテキストです。
-                        これはダミーテキストです。これはダミーテキストです。
-                    </p>
+                  <!-- 以下は複製（クローン） -->
+                    <!-- <img src="img1.jpg" alt="">
+                    <img src="img2.jpg" alt="">
+                    <img src="img3.jpg" alt=""> -->
                 </div>
             </div>
 
         </div>
-    </section>
- </main>
-
-  
 
 
 
+        <div class="side-menu">
+
+
+            <div class="menu-decoration">
+                <!-- 3本ライン -->
+                <div class="lines">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </div>
+                <!-- 水引画像 -->
+                <img src="img/aka 2.png" alt="水引" class="mizuhiki" />
+              </div>
+
+
+            <nav class="menubar">
+
+                
+                <div class="home">
+                    <a href="index.html" class="home">HOME</a>
+                </div>
+    
+                <div class="history">
+                    <a href="history.html" class="history">HISTORY</a>
+                </div>
+    
+                <div class="shop">
+                    <a href="shop.html" class="shop">SHOP</a>
+                </div>
+    
+                <div class="make">
+                    <a href="make.html" class="make">MAKE</a>
+                </div>
+
+
+                
+
+
+                
+           
+            </nav>
+            
+        
+        
+        
+        </div>
+      </div>
+
+
+
+    
 </body>
-
-
 </html>
+
